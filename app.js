@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+app.use('/discover-me/api', router)
 
 const request = require('request')
 
