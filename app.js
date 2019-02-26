@@ -65,4 +65,4 @@ app.get('/strava', function (req, res) {
     })
 })
 
-app.listen(3000, () => console.log('Server is up'))
+app.listen(80, () => console.log('Server is up'))
