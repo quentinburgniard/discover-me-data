@@ -1,11 +1,15 @@
 const express = require('express')
 const app = express()
 
+const cors = require('cors');
+
 const request = require('request')
 
 require('dotenv').config()
 
 const apiCache = require('apicache')
+
+app.use(cors({ origin: 'https://quentinburgniard.com' }))
 
 let cache = apiCache.middleware
 app.use(cache('1 day'))
